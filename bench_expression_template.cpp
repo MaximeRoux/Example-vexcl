@@ -11,6 +11,7 @@ void bench() {
 	vex::Context ctx(vex::Filter::GPU); //Contexte
 	vex::vector<float> a_d(n), b_d(n), c_d(n), res_d(n);  // Device vector.
 	
+	//Initialization
   	for (size_t i = 0; i < n; i++)
 	{
 		a[i] = (i*1.0f + 4.)*0.5;
